@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">        
+        <title>JS array</title>
+    </head>
+    <body>
+        <script>
+            var scores = [12, 11, 60, 14, 54, 24, 58, 50, 52,
+             54, 48, 69, 34, 55, 14, 82, 44, 66]
+            var arr2 = [132, 423, 5443, 34, 3321, 2334, 980]
+
+            function findMin(arr){
+                var min = arr[0];
+                var item ;
+                for (var i = 1 ;i < arr.length; i++){
+                    if (arr[i] < min){
+                        min = arr[i]
+                        item = i ;
+                    }
+                }
+                document.write("数组中最小的数是：" + min + "下表是：" + item + "<br>")
+            }
+            findMin(scores);
+            findMin(arr2);
+        </script>
+    </body>
+</html>
