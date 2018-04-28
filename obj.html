@@ -25,9 +25,11 @@
         color: 'pink',
         passengers: 2,
         convertible: true,
-        mileage: 2000000
+        mileage: 2000000,
+        drive:function(){
+        alert("zoom!zoom!")
       }
-      
+      }
       function baofei(car){
 
           if(car.year > 2017 && car.mileage <10000){
@@ -40,6 +42,7 @@
     
     baofei(audi)
     baofei(Bugatti)
+    Bugatti.drive()
     </script>
   </body>
 </html>
