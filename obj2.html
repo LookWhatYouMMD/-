@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    var flat ={
+      make:'Flat',
+      model:'500',
+      year:'1957',
+      color:'Medium Blue',
+      drive: function(){
+        alert("Zoom Zoom!!");
+      },
+      setColor: function(c){
+        this.color = c;
+      },
+      getColor: function(){
+        return this.color;
+      }
+    }
+    document.write(flat.getColor() + "<br>");
+    flat.setColor('golden');
+    document.write(flat.getColor() + "<br>")
+    </script>
+  </body>
+</html>
