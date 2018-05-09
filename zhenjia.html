@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>True or False ,This is a question</title>
+  </head>
+  <body>
+    <script>
+      function tof3 (one, two){
+          if (one === two) {
+          document.writeln('真')
+        } 
+        else {
+          document.writeln('假')
+        }
+      }
+      function tof2 (one, two){
+          if (one == two) {
+          document.writeln('真')
+        } 
+        else {
+          document.writeln('假')
+        }
+      }
+      
+      tof3(1,true)
+      tof3(1,0)
+      tof2(1,true)
+      tof2(1,0)
+      tof3(null,undefined)
+      tof2(null,undefined)
+    </script>
+  </body>
+</html>
